@@ -1,0 +1,27 @@
+{
+  "version": "0.1",
+  "name": "Kanbania",
+  "description": "A Kanban Board to manage your tasks",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/app-template/app-icons/icon-16.png",
+    "48": "/app-template/app-icons/icon-48.png",
+    "128": "/app-template/app-icons/icon-128.png"
+  },
+  "developer": {
+    "name": "Julio Lopez Montalvo",
+    "url": "https://github.com/TheBlasfem"
+  },
+  "locales": {
+    "es": {
+      "description": "Un tablero Kanban para que puedas administrar el estado de tus tareas"
+    },
+    "it": {
+      "description": "Il vostro nuovo fantastico Open Web App",
+      "developer": {
+        "url": "http://yourawesomeapp.com"
+      }
+    }
+  },
+  "default_locale": "en"
+}

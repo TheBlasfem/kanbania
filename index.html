@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kanbania</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/angular.min.js"></script>
+</head>
+<body ng-app="myapp">
+	<h1>Kanbania</h1>
+	<div ng-controller="globalcontroller">
+		<input type="text" ng-model="newtodo" placeholder="Insert Task">
+		<button ng-click="addtodo()">To Do</button>
+		<div>
+			<h3>To Do</h3>
+			<ul>
+				<li data-id="{{task.id}}" ng-repeat="task in tasks | state:1">{{task.name}} <span ng-click="adddoing($event)">Click to Doing</span></li>
+			</ul>
+		</div>
+		<div>
+			<h3>Doing</h3>
+			<ul>
+				<li data-id="{{task.id}}" ng-repeat="task in tasks | state:2">{{task.name}} <span ng-click="adddone($event)">Click to Done</span></li>
+			</ul>
+		</div>
+		<div>
+			<h3>Done</h3>
+			<ul>
+				<li data-id="{{task.id}}" ng-repeat="task in tasks | state:3">{{task.name}}</li>
+			</ul>
+		</div>
+	</div>
+	<!--<script src="js/angular-route.min.js"></script>-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
